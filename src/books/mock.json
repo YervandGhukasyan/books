@@ -1,0 +1,31 @@
+{
+  "libraries": [
+    {
+      "id": "28",
+      "title": "Lib title"
+    }
+  ],
+  "books": [
+    {
+      "id": "319",
+      "title": "test book_1",
+      "description": "test description about book",
+      "created": 1612128913208,
+      "libraryId": "28"
+    },
+    {
+      "id": "320",
+      "title": "test book_2",
+      "description": "test description about book",
+      "created": 1612128913208,
+      "libraryId": "28"
+    },
+    {
+      "id": "321",
+      "title": "test book_3",
+      "description": "test description about book",
+      "created": 1612128913208,
+      "libraryId": "28"
+    }
+  ]
+}

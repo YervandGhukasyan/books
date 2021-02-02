@@ -1,0 +1,37 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Library {
+  id: ID!
+  title: String!
+}
+
+type Book {
+  id: ID!
+  title: String!
+  description: String!
+  created: Date!
+  libraryId: String!
+  library: Library!
+}
+
+"""Date custom scalar type"""
+scalar Date
+
+type Count {
+  total: Int!
+}
+
+type Query {
+  books(search: String = null): [Book!]!
+  count(fromDate: Float!): Count!
+}
+
+type Mutation {
+  change(input: NewBookInput!, id: String!): Book!
+}
+
+input NewBookInput {
+  title: String!
+}
